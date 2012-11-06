@@ -2,6 +2,8 @@
 <html lang="en">
 
 	<head>
+		<script type="text/javascript" src="//use.typekit.net/cte4lth.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<meta charset="utf-8">
 
 		<title>Tim Croteau - UX Strategy | UI Design | All Around Nice Fella</title>
@@ -13,15 +15,15 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/reveal/reveal.css">
+		<link rel="stylesheet" href="css/reveal/theme/default.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+			document.write( '<link rel="stylesheet" href="css/reveal/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
 
 		<!--[if lt IE 9]>
@@ -31,8 +33,15 @@
 
 	<body>
 		<div id="container">
-			<header>Here's some other stuff up top</header>
-
+			<header>
+				<hgroup>
+					<h1>Tim Croteau</h1>
+					<h2>UI Designer and UX Strategist</h2>
+				</hgroup>
+			</header>
+			<section>
+				<p></p>
+			</section>
 			<div class="reveal">
 
 				<!-- Any section element inside of this container is displayed as a slide -->
@@ -44,20 +53,10 @@
 						<div>image here</div>
 						<div>image here</div>
 						<div>image here</div>
-						<div>image here</div>
-						<div>image here</div>
-						<div>image here</div>
-						<div>image here</div>
-						<div>image here</div>
 					</section>
 
 					<section>
 						<h1>UI Work</h1>
-						<div>image here</div>
-						<div>image here</div>
-						<div>image here</div>
-						<div>image here</div>
-						<div>image here</div>
 						<div>image here</div>
 						<div>image here</div>
 						<div>image here</div>
@@ -77,7 +76,6 @@
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
-				progress: true,
 				history: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme

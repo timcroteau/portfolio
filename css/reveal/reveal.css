@@ -171,14 +171,14 @@ body {
 }
 	.reveal .progress:after {
 		content: '';
-		display: 'block';
+		display: none;
 		position: absolute;
 		height: 20px;
 		width: 100%;
 		top: -20px;
 	}
 	.reveal .progress span {
-		display: block;
+		display: none;
 		height: 100%;
 		width: 0px;
 
@@ -227,7 +227,6 @@ body {
 
 .reveal .slides>section,
 .reveal .slides>section>section {
-	background:rgba(0,0,0,.24);
 	display: none;
 	position: absolute;
 	width: 100%;
@@ -248,7 +247,6 @@ body {
 }
 
 .reveal .slides>section.present {
-	background:rgba(0,0,0,.24);
 	display: block;
 	z-index: 11;
 	opacity: 1;
@@ -259,14 +257,15 @@ body {
 }
 
 .reveal .slides div {
+	background:rgba(0,0,0,.24);
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
-	width:30%;
+	width:47%;
 	min-height:155px;
-	border:1px solid white;
+	border:2px solid rgba(255,255,255,.34);
 	float:left;
-	margin:1.6%;
+	margin:1.5%;
 }
 
 /*********************************************
