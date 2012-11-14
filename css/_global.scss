@@ -21,3 +21,11 @@ footer {
 	position:absolute;
 	bottom:0;
 	width:100%;}
+
+.submit {
+	@include button($color1);}
+
+	.submit:hover {@include button(lighten($color1, 5%));}
+
+	.submit:active {
+		@include button(darken($color1, 5%));}

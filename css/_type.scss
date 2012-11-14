@@ -20,13 +20,24 @@ h2 {
 	margin:1em 0;}
 
 
-// Color
+// Fonts
+
+h1, h2 {font-family: "cubano", sans-serif;}
+
+body {font-family: "museo-sans", sans-serif;}
+
+
+// Style
+
+body {color:$text;}
 
 h1 {
-	color:$color1;}
+	color:$color1;
+	text-shadow:0 1px 0 $white;}
 
 h2 {
-	color:$color2;}
+	color:$color2;
+	text-shadow:0 1px 0 $white;}
 
 h3 {
 	color:$color3;}
@@ -35,8 +46,3 @@ a {
 	color:$color1;}
 
 
-// Fonts
-
-h1, h2 {font-family: "cubano", sans-serif;}
-
-body {font-family: "museo-sans", sans-serif;}
