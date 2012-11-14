@@ -1,11 +1,40 @@
-/* normalize.css v2.0.1 | MIT License | git.io/normalize ======================================== */
+/*   Resets, Normalizers, Standardizers, Maker Betterers   */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+ // Pillaged from Eric Meyer's reset | http://meyerweb.com/eric/tools/css/reset/
+//_________________________________________________________________________________
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+h1,h2, h3,h4,h5,h6 {font-weight:normal;}
+
+ // normalize.css v2.0.1 | MIT License | git.io/normalize
+//_______________________________________________________________
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0; }
 [hidden] { display: none; }
-html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body { margin: 0; }
+
+
+html, body { height:100%;}
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
@@ -32,3 +61,26 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; vertical-align: top; }
 table { border-collapse: collapse; border-spacing: 0; }
+ 
+
+ // Pillaged from HTML5 Boilerplate
+//_______________________________________________________________
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+img { -ms-interpolation-mode: bicubic; }
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v 
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+// Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+svg:not(:root) { overflow: hidden; }
+
+@media print {
+  img { max-width: 100% !important; }
+}
+
+@media print {
+  p, h2, h3 { orphans: 3; widows: 3; }
+}

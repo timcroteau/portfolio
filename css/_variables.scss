@@ -1,23 +1,25 @@
 //__________________________________________________ Variables /
 
 // White - Grays - Black
-$black:             hsl(0, 0%, 0%);
-$gray90:            hsl(0, 0%, 10%);
-$gray80:            hsl(0, 0%, 20%);
-$gray70:            hsl(0, 0%, 30%);
-$gray60:            hsl(0, 0%, 40%);
-$gray50:            hsl(0, 0%, 50%);
-$gray40:            hsl(0, 0%, 60%);
-$gray30:            hsl(0, 0%, 70%);
-$gray20:            hsl(0, 0%, 80%);
-$gray10:            hsl(0, 0%, 90%);
-$white:             hsl(0, 0%, 100%);
+$black:				rgb(0,0,0);
+$gray1:				rgb(32,32,32);
+$gray2:				rgb(64,64,64);
+$gray3:				rgb(96,96,96);
+$gray4:				rgb(128,128,128);
+$gray5:				rgb(160,160,160);
+$gray6:				rgb(192,192,192);
+$gray7:				rgb(224,224,224);
+$white:				rgb(255,255,255);
 
 
 // Color scheme
-$primary:             #336699;
-$text-shadow:         $white;
-$lightest:            $white;
-$darkest:             $black;
-$background:          $gray10;
-$text:                $gray80;
+$color1:			#537373;
+$color2:			#013440;
+$color3:			#537373;
+$background:		#f2e8dc;
+$text:				#011526;
+
+
+//corners
+$inround:		4px;
+$outround:		6px;

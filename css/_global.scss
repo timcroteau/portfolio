@@ -1,0 +1,23 @@
+body {
+	background:$background;
+	color:$text;}
+
+#wrapper {
+	height:100%;
+	margin:0 auto;
+	min-height:100%;
+	position:relative;
+	width:960px;}
+
+header#heading {
+	padding-top:64px;}
+
+#main {
+	padding-bottom:80px;}
+
+footer {
+	background:$black;
+	height:80px;
+	position:absolute;
+	bottom:0;
+	width:100%;}

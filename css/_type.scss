@@ -1,0 +1,42 @@
+
+// Scale - Baseline unit: 24
+
+body {font:100% sans-serif;}
+
+html > body {font-size:16px;}
+
+p {
+	line-height:2em;
+	margin-bottom: 2em;}
+
+h1 {
+	font-size:4em;
+	line-height:1em;
+	margin-bottom:0.5em;}
+
+h2 {
+	font-size:2em;
+	line-height:2em;
+	margin:1em 0;}
+
+
+// Color
+
+h1 {
+	color:$color1;}
+
+h2 {
+	color:$color2;}
+
+h3 {
+	color:$color3;}
+
+a {
+	color:$color1;}
+
+
+// Fonts
+
+h1, h2 {font-family: "cubano", sans-serif;}
+
+body {font-family: "museo-sans", sans-serif;}
