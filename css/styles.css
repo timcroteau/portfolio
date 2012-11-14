@@ -185,10 +185,16 @@ h1 {
   line-height: 1em;
   margin-bottom: 0.5em; }
 
+hgroup h1 {
+  margin-bottom: 0.25em; }
+
 h2 {
   font-size: 2em;
-  line-height: 2em;
+  line-height: 1em;
   margin: 1em 0; }
+
+hgroup h2 {
+  margin-top: 0; }
 
 h1, h2 {
   font-family: "cubano", sans-serif; }
@@ -214,7 +220,7 @@ a {
   color: #537373; }
 
 body {
-  background: #f2e8dc;
+  background: #f2e8dc url(../images/bg_texture.png) 0 0;
   color: #011526; }
 
 #wrapper {
