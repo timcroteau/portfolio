@@ -1,0 +1,38 @@
+//varying shadow grades
+@mixin shadow1 {
+	box-shadow:0px 2px 2px rgba(0,0,0,.34);
+}
+@mixin shadow2 {
+	box-shadow:0px 2px 2px rgba(0,0,0,.54);
+}
+@mixin shadow3 {
+	box-shadow:0px 2px 2px rgba(0,0,0,.74);
+}
+@mixin glowing {
+	box-shadow:inset 0px 1px 2px 0 rgba(255,255,255,.34);
+}
+
+@mixin roundedIn {
+	border-radius: $inround;
+}
+
+@mixin roundedOut {
+	border-radius: $outround;
+}
+
+
+@mixin button($buttonbg) {
+	@include glowing;
+	@include roundedIn;
+	color:$white;
+	background:$buttonbg;
+	background: -moz-linear-gradient($buttonbg, darken($buttonbg, 20%)); /* FF 3.6+ */  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $buttonbg), color-stop(100%, darken($buttonbg, 20%))); /* Safari 4+, Chrome 2+ */  
+    background: -webkit-linear-gradient($buttonbg, darken($buttonbg, 20%)); /* Safari 5.1+, Chrome 10+ */  
+    background: -o-linear-gradient($buttonbg, darken($buttonbg, 20%)); /* Opera 11.10 */  
+    background: linear-gradient($buttonbg, darken($buttonbg, 20%)); /* the standard */  
+	font-weight:bold;
+	padding:8px;
+	position:relative;
+	text-decoration:none;
+font-weight:bold;}

@@ -2,15 +2,24 @@
 <html lang="en">
 
 	<head>
-		
 		<meta charset="utf-8">
-
 		<title>Tim Croteau - UX Strategy | UI Design | All Around Nice Fella</title>
 		<meta name="description" content="The online portfolio of Tim Croteau, UX strategist and UI designer.">
 		<meta name="author" content="Tim Croteau">
-
-		<link rel="stylesheet" href="css/styles.css" type="text/css">
-
+		<!--[if lt IE 9]>
+			<!-- For compatibility with older IEs -->
+			<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+			<script src="js/excanvas.min.js"></script>
+		<![endif]-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if IE]>
+			<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<link rel="stylesheet" href="/stylesheets/css/styles.css" type="text/css">
+		<script type="text/javascript" src="//use.typekit.net/cte4lth.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 
 	<body>
@@ -22,6 +31,37 @@
 					<h2>UI Designer + UX Strategist</h2>
 				</hgroup>
 				<p>This is a paragraph about many things. Many wonderful things like words and sentences. This is a paragraph about many things. Many wonderful things like words and sentences. This is a paragraph about many things. Many wonderful things like words and sentences. This is a paragraph about many things. Many wonderful things like words and sentences. </p>
+				<p>
+					<span class="chartwell pies">
+						<span class="one">8</span>
+						<span class="two">5</span>
+						<span class="three">30</span>
+						<span class="four">13</span>
+						<span class="five">14</span>
+						<span class="six">25</span>
+						<span class="seven">5</span>
+					</span>
+
+					<span class="chartwell pies">
+						<span class="one">8</span>
+						<span class="two">5</span>
+						<span class="three">30</span>
+						<span class="four">13</span>
+						<span class="five">14</span>
+						<span class="six">25</span>
+						<span class="seven">5</span>
+					</span>
+
+					<span class="chartwell pies">
+						<span class="one">8</span>
+						<span class="two">5</span>
+						<span class="three">30</span>
+						<span class="four">13</span>
+						<span class="five">14</span>
+						<span class="six">25</span>
+						<span class="seven">5</span>
+					</span>
+				</p>
 			</header>
 			<div id="main">
 				<section id="work">
@@ -36,7 +76,12 @@
 			</div>
 			<footer>&copy; 2012 Tim Croteau. All rights reserved.</footer>
 		</div>
-		<script type="text/javascript" src="//use.typekit.net/cte4lth.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script src="js/chartwell.min.js" type="text/javascript"></script>
+		<script src="js/chartwell_pies.min.js" type="text/javascript"></script>
+		<script>
+			window.onload = function(){
+				FFChartwell()
+			}
+		</script>
 	</body>
 </html>

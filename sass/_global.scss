@@ -1,0 +1,46 @@
+body {
+	background:$background url(../images/bg_texture.png) 0 0;
+	color:$text;}
+
+#wrapper {
+	height:100%;
+	margin:0 auto;
+	min-height:100%;
+	position:relative;
+	width:960px;}
+
+header#heading {
+	padding-top:64px;}
+
+#main {
+	padding-bottom:80px;}
+
+footer {
+	background:$black;
+	height:80px;
+	position:absolute;
+	bottom:0;
+	width:100%;}
+
+.submit {
+	@include button($color1);}
+
+	.submit:hover {@include button(lighten($color1, 5%));}
+
+	.submit:active {
+		@include button(darken($color1, 5%));}
+
+.chartwell {
+	font-family: Chartwell;
+	font-size: 14em;
+	& .one {color:shade($color2,0%);}
+	& .two {color:shade($color2,5%);}
+	& .three {color:shade($color2,10%);}
+	& .four {color:shade($color2,15%);}
+	& .five {color:shade($color2,20%);}
+	& .six {color:shade($color2,25%);}
+	& .seven {color:shade($color2,30%);}
+	& .hole {color:$background;}
+}
+	
+	
