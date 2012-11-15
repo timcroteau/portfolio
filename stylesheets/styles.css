@@ -304,39 +304,44 @@ hgroup h2 {
   margin-top: 0;
 }
 
-/* line 40, ../sass/_type.scss */
+/* line 37, ../sass/_type.scss */
+li {
+  line-height: 2em;
+}
+
+/* line 41, ../sass/_type.scss */
 h1, h2 {
   font-family: "cubano", sans-serif;
 }
 
-/* line 42, ../sass/_type.scss */
+/* line 43, ../sass/_type.scss */
 body {
   font-family: "museo-sans", sans-serif;
 }
 
-/* line 47, ../sass/_type.scss */
+/* line 48, ../sass/_type.scss */
 body {
   color: #011526;
 }
 
-/* line 49, ../sass/_type.scss */
+/* line 50, ../sass/_type.scss */
 h1 {
   color: #537373;
   text-shadow: 0 1px 0 white;
 }
 
-/* line 53, ../sass/_type.scss */
+/* line 54, ../sass/_type.scss */
 h2 {
   color: #013641;
   text-shadow: 0 1px 0 white;
 }
 
-/* line 57, ../sass/_type.scss */
+/* line 58, ../sass/_type.scss */
 h3 {
   color: #537373;
 }
 
-/* line 60, ../sass/_type.scss */
+/* line 61, ../sass/_type.scss */
 a {
   color: #537373;
 }
@@ -446,38 +451,109 @@ footer {
 
 /* line 33, ../sass/_global.scss */
 .chartwell {
+  display: inline-block;
   font-family: Chartwell;
-  font-size: 14em;
+  font-size: 17em;
+  text-align: center;
+  width: 33%;
 }
-/* line 36, ../sass/_global.scss */
+/* line 39, ../sass/_global.scss */
 .chartwell .one {
   color: #013641;
 }
-/* line 37, ../sass/_global.scss */
-.chartwell .two {
-  color: #00333d;
-}
-/* line 38, ../sass/_global.scss */
-.chartwell .three {
-  color: #00303a;
-}
-/* line 39, ../sass/_global.scss */
-.chartwell .four {
-  color: #002d37;
-}
 /* line 40, ../sass/_global.scss */
-.chartwell .five {
-  color: #002b34;
+.chartwell .two {
+  color: #154650;
 }
 /* line 41, ../sass/_global.scss */
-.chartwell .six {
-  color: #002830;
+.chartwell .three {
+  color: #29565f;
 }
 /* line 42, ../sass/_global.scss */
-.chartwell .seven {
-  color: #00252d;
+.chartwell .four {
+  color: #3d666e;
 }
 /* line 43, ../sass/_global.scss */
+.chartwell .five {
+  color: #52767d;
+}
+/* line 44, ../sass/_global.scss */
+.chartwell .six {
+  color: #66868d;
+}
+/* line 45, ../sass/_global.scss */
+.chartwell .seven {
+  color: #7a969c;
+}
+/* line 46, ../sass/_global.scss */
 .chartwell .hole {
   color: #f2e8dc;
+}
+
+/* line 49, ../sass/_global.scss */
+.bullets {
+  list-style: none;
+}
+/* line 51, ../sass/_global.scss */
+.bullets .one:before {
+  content: ' ';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right: 1em;
+  background: #013641;
+}
+/* line 52, ../sass/_global.scss */
+.bullets .two:before {
+  content: ' ';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right: 1em;
+  background: #154650;
+}
+/* line 53, ../sass/_global.scss */
+.bullets .three:before {
+  content: ' ';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right: 1em;
+  background: #29565f;
+}
+/* line 54, ../sass/_global.scss */
+.bullets .four:before {
+  content: ' ';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right: 1em;
+  background: #3d666e;
+}
+/* line 55, ../sass/_global.scss */
+.bullets .five:before {
+  content: ' ';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right: 1em;
+  background: #52767d;
+}
+/* line 56, ../sass/_global.scss */
+.bullets .six:before {
+  content: ' ';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right: 1em;
+  background: #66868d;
+}
+/* line 57, ../sass/_global.scss */
+.bullets .seven:before {
+  content: ' ';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right: 1em;
+  background: #7a969c;
 }

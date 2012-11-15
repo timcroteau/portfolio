@@ -31,16 +31,29 @@ footer {
 		@include button(darken($color1, 5%));}
 
 .chartwell {
+	display:inline-block;
 	font-family: Chartwell;
-	font-size: 14em;
-	& .one {color:shade($color2,0%);}
-	& .two {color:shade($color2,5%);}
-	& .three {color:shade($color2,10%);}
-	& .four {color:shade($color2,15%);}
-	& .five {color:shade($color2,20%);}
-	& .six {color:shade($color2,25%);}
-	& .seven {color:shade($color2,30%);}
+	font-size: 17em;
+	text-align:center;
+	width:33%;
+	& .one {color:$shade1;}
+	& .two {color:$shade2;}
+	& .three {color:$shade3;}
+	& .four {color:$shade4;}
+	& .five {color:$shade5;}
+	& .six {color:$shade6;}
+	& .seven {color:$shade7;}
 	& .hole {color:$background;}
 }
 	
+.bullets {
+	list-style:none;
+	& .one:before {@include makeBullet; background:$shade1;}
+	& .two:before {@include makeBullet; background:$shade2;}
+	& .three:before {@include makeBullet; background:$shade3;}
+	& .four:before {@include makeBullet; background:$shade4;}
+	& .five:before {@include makeBullet; background:$shade5;}
+	& .six:before {@include makeBullet; background:$shade6;}
+	& .seven:before {@include makeBullet; background:$shade7;}
 	
+}

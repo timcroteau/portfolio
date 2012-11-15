@@ -21,7 +21,17 @@ $background:		#f2e8dc;
 $text:				#011526;
 
 
-//
+// Shaders
+$shade1:			tint($color2,0%);
+$shade2:			tint($color2,8%);
+$shade3:			tint($color2,16%);
+$shade4:			tint($color2,24%);
+$shade5:			tint($color2,32%);
+$shade6:			tint($color2,40%);
+$shade7:			tint($color2,48%);
+$shade8:			tint($color2,56%);
+$shade9:			tint($color2,64%);
+$shade10:			tint($color2,72%);
 
 
 //corners
