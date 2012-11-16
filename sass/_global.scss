@@ -2,6 +2,13 @@ body {
 	background:$background url(../images/bg_texture.png) 0 0;
 	color:$text;}
 
+hr {
+	height:1px;
+	line-height:1px;
+	background:transparentize($black, .8);
+	box-shadow:0 1px 0 0 $white;
+	margin:2em 0;}
+
 #wrapper {
 	height:100%;
 	margin:0 auto;
@@ -13,12 +20,12 @@ header#heading {
 	padding-top:64px;}
 
 #main {
-	padding-bottom:80px;}
+	padding-bottom:85px;}
 
 footer {
-	background:$black;
-	height:80px;
+	height:48px;
 	margin-top:-80px;
+	padding-top:64px;
 	position:relative;
 	bottom:0;
 	width:100%;}
@@ -31,12 +38,21 @@ footer {
 	.submit:active {
 		@include button(darken($color1, 5%));}
 
+#charts {
+	@include pie-clearfix;
+	position:relative;}
+
+#charts div {
+	float:left;
+	text-align:center;
+	width:33%;}
+
 .chartwell {
 	display:inline-block;
 	font-family: Chartwell;
 	font-size: 17em;
+	line-height:.75em;
 	text-align:center;
-	width:33%;
 	& .one {color:$shade1;}
 	& .two {color:$shade2;}
 	& .three {color:$shade3;}
@@ -44,17 +60,81 @@ footer {
 	& .five {color:$shade5;}
 	& .six {color:$shade6;}
 	& .seven {color:$shade7;}
-	& .hole {color:$background;}
+	& .hole {color:$shade1;}
+	z-index:1;
 }
 	
 .bullets {
 	list-style:none;
-	& .one:before {@include makeBullet; background:$shade1;}
-	& .two:before {@include makeBullet; background:$shade2;}
-	& .three:before {@include makeBullet; background:$shade3;}
-	& .four:before {@include makeBullet; background:$shade4;}
-	& .five:before {@include makeBullet; background:$shade5;}
-	& .six:before {@include makeBullet; background:$shade6;}
-	& .seven:before {@include makeBullet; background:$shade7;}
-	
+	margin:-0px auto;
+	text-align:left;
+	&.skills {font-weight:bold; width:51%;}
+	&.stats {width:71%;}
+	&.tech {font-weight:bold; width:35%;}
+	.one:before {@include makeBullet; background:$shade1;}
+	.two:before {@include makeBullet; background:$shade2;}
+	.three:before {@include makeBullet; background:$shade3;}
+	.four:before {@include makeBullet; background:$shade4;}
+	.five:before {@include makeBullet; background:$shade5;}
+	.six:before {@include makeBullet; background:$shade6;}
+	.seven:before {@include makeBullet; background:$shade7;}
+}
+
+.test {
+	list-style:none;
+	margin:-0px auto;
+	text-align:left;
+	li {display:block;margin-bottom:5px;}
+	.one {background:$shade1;width:200px; height:15px;}
+	.two {background:$shade2;width:200px; height:15px;}
+	.three {background:$shade3;width:200px; height:15px;}
+	.four {background:$shade4;width:150px; height:15px;}
+	.five {background:$shade5;width:150px; height:15px;}
+	.six {background:$shade6;width:100px; height:15px;}
+}
+
+#charts div#man {
+	background:$shade1 url(../images/stats_bg.png) 0 0 no-repeat;
+	height:167px;
+	position:absolute;
+	top:145px;
+	left:426px;
+	width:97px;
+	z-index:10;}
+
+#work {@include pie-clearfix;}
+
+#work a {
+	@include shadow1;
+	border:1px solid $color1;
+	float:left;
+	padding:4px;
+	margin-right:3.4%;
+	margin-bottom:3.4%;
+	width:30%;
+}
+
+#work a:nth-child(3n+3) {
+	float:right;
+	margin-right:0;
+}
+
+label, input, textarea {display:block;}
+input, textarea {
+	@include roundedIn;
+	background:transparentize($white,.4);
+	border:1px solid $color3;
+	line-height:2em;
+	width:50%;}
+
+#contact aside {
+	@include roundedIn;
+	background:transparentize($white,.8);
+	box-shadow:inset 0 1px 2px 0 transparentize($white,.6), 0px 2px 2px transparentize($black,.76);
+	border-top:0;
+	float:right;
+	font-weight:bold;
+	margin-top:7em;
+	padding:1em;
+	width:35%;
 }

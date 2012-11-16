@@ -9,7 +9,6 @@
     src: url("/fonts/ChartwellTextWebPro.woff") format("woff");
 }
 
-
 // Scale - Baseline unit: 24
 
 body {font:100% sans-serif;}
@@ -25,22 +24,39 @@ h1 {
 	line-height:1em;
 	margin-bottom:0.5em;}
 
-	hgroup h1 {margin-bottom:0.25em}
+	hgroup h1 {
+		display:inline;
+		margin-bottom:0.25em}
 
 h2 {
 	font-size:2em;
 	line-height:1em;
 	margin:1em 0;}
 
-	hgroup h2 {margin-top:0}
+	hgroup h2 {
+		display:inline;
+		margin-top:0;
+		text-shadow:0 1px 0 $white;}
+
+h3 {
+	font-size:2em;
+	line-height:2em;
+	margin:0;}
+
+label {
+	font-size:1.5em;
+	line-height:2em;
+	margin:0;}
 
 li {line-height:2em;}
+
+label {margin-top:1em;}
 
 // Fonts
 
 h1, h2 {font-family: "cubano", sans-serif;}
 
-body {font-family: "museo-sans", sans-serif;}
+body, h3 {font-family: "museo-sans", sans-serif;}
 
 
 // Style
@@ -52,11 +68,11 @@ h1 {
 	text-shadow:0 1px 0 $white;}
 
 h2 {
-	color:$color2;
-	text-shadow:0 1px 0 $white;}
+	color:$color2;}
 
-h3 {
-	color:$color3;}
+h3, label {
+	color:$color3;
+	font-weight:bold;}
 
 a {
 	color:$color1;}
