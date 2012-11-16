@@ -18,7 +18,8 @@ header#heading {
 footer {
 	background:$black;
 	height:80px;
-	position:absolute;
+	margin-top:-80px;
+	position:relative;
 	bottom:0;
 	width:100%;}
 
