@@ -1,5 +1,5 @@
 body {
-	background:$background url(../images/bg_texture.png) 0 0;
+	background:$background url(../images/site_bg2.jpg) 0 0;
 	color:$text;}
 
 hr {
@@ -104,20 +104,63 @@ footer {
 
 #work {@include pie-clearfix;}
 
-#work a {
-	@include shadow1;
-	border:1px solid $color1;
+#work img {
 	float:left;
-	padding:4px;
-	margin-right:3.4%;
-	margin-bottom:3.4%;
-	width:30%;
+	width:100%;
 }
 
-#work a:nth-child(3n+3) {
+#work img:nth-child(even) {
 	float:right;
 	margin-right:0;
 }
+
+
+figure {position:fixed;text-align:center;}
+
+.thumb {
+	@include shadow1;
+	background:transparentize($white,.6);	
+	float:left;
+	padding:4px;
+	position:relative;
+	margin-right:1%;
+	margin-bottom:3.4%;
+	width:48%;}
+
+
+
+.thumb hgroup {
+	background:transparentize($white,.1);
+	height:30px;
+	display:none;
+	height:100%;
+	pointer-events:none;
+	position:absolute;
+		top:0;
+		left:0;
+	text-align:center;
+	width:100%;}
+
+	.thumb hgroup a {pointer-events:auto;}
+
+.thumb:hover hgroup {display:block;}
+
+#work figure img {height:auto; width:auto;}
+
+#zoom1, #zoom2, #zoom3, #zoom4 {display:none;}
+
+/* Modals */
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
 
 label, input, textarea {display:block;}
 input, textarea {
