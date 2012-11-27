@@ -128,9 +128,9 @@
 					<aside>
 						<p>I am currently available for consulting and design work, as well as the occasional voice acting gig. I can also be found on:</p>
 						<ul>
-							<li>Dribbble</li>
-							<li>Twitter</li>
-							<li>LinkedIn</li>
+							<li><a href="http://www.dribbble.com/timcroteau" target="_blank">Dribbble</a></li>
+							<li><a href="http://www.twitter.com/timcroteau" target="_blank">Twitter</a></li>
+							<li><a href="http://www.linkedin.com/profile/view?id=71357283" target="_blank">LinkedIn</a></li>
 						</ul>
 					</aside>
 					<h2>Contact Me</h2>
@@ -160,7 +160,7 @@
 				            
 				            // this is the message that gets displayed after submission
 				            if ($success){
-				                echo 'Thanks so much! I'll be in touch soon.;
+				                echo 'Thanks so much! I\'ll be in touch soon.';
 				            } else {
 				                echo 'Uh Oh... I think I screwed up sending that...';
 				            }
@@ -171,13 +171,16 @@
 
 					<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="contact_me">
 						<label for="name">Name</label>
-						<input type="text" id="name">
+						<input type="text" id="name" name="name" pattern="^[\w\d\'\- ]{3,}$" title="Must include at least 2 characters" required>
 						<label for="email">Email Address</label>
-						<input type="email" id="email">
+						<input type="email" id="email" name="email" required>
 						<label for="comments">Comment or Question</label>
-						<textarea id="comments"></textarea>
+						<textarea id="comments" name="comments" maxlength="1000" pattern="{0,1000}" title="1000 character maximum, please" required></textarea>
 						<button type="submit" name="send">Send Message</button>
 					</form>
+					 <?php
+            }
+        ?>
 				</section>
 			</div>
 			<footer>&copy; 2012 Tim Croteau. All rights reserved. <a href="mailto:tim@timcroteau.org" target="_blank">Email Me</a></footer>

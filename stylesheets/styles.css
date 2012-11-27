@@ -329,6 +329,10 @@ h3, label {
 
 a {
   color: #537373;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 body {
@@ -370,7 +374,7 @@ footer {
 }
 
 .submit {
-  box-shadow: inset 0px 1px 2px 0 rgba(255, 255, 255, 0.34);
+  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.34);
   border-radius: 3px;
   color: white;
   background: #537373;
@@ -384,15 +388,14 @@ footer {
   /* Opera 11.10 */
   background: linear-gradient(#537373, #283838);
   /* the standard */
-  font-weight: bold;
+  border: 0px;
   padding: 8px;
   position: relative;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .submit:hover {
-  box-shadow: inset 0px 1px 2px 0 rgba(255, 255, 255, 0.34);
+  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.34);
   border-radius: 3px;
   color: white;
   background: #5e8282;
@@ -406,15 +409,14 @@ footer {
   /* Opera 11.10 */
   background: linear-gradient(#5e8282, #334747);
   /* the standard */
-  font-weight: bold;
+  border: 0px;
   padding: 8px;
   position: relative;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .submit:active {
-  box-shadow: inset 0px 1px 2px 0 rgba(255, 255, 255, 0.34);
+  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.34);
   border-radius: 3px;
   color: white;
   background: #486464;
@@ -428,11 +430,10 @@ footer {
   /* Opera 11.10 */
   background: linear-gradient(#486464, #1e2929);
   /* the standard */
-  font-weight: bold;
+  border: 0px;
   padding: 8px;
   position: relative;
   text-decoration: none;
-  font-weight: bold;
 }
 
 #charts {
@@ -703,20 +704,98 @@ label, input, textarea {
 
 input, textarea {
   border-radius: 3px;
+  box-shadow: 0 1px 4px 0px rgba(255, 255, 255, 0.8), inset 0 1px 4px 0px rgba(0, 0, 0, 0.2);
   background: rgba(255, 255, 255, 0.6);
-  border: 1px solid #537373;
+  border: 1px solid #d4ccc1;
   line-height: 2em;
   width: 50%;
 }
 
+button {
+  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.34);
+  border-radius: 3px;
+  color: white;
+  background: #537373;
+  background: -moz-linear-gradient(#537373, #283838);
+  /* FF 3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #537373), color-stop(100%, #283838));
+  /* Safari 4+, Chrome 2+ */
+  background: -webkit-linear-gradient(#537373, #283838);
+  /* Safari 5.1+, Chrome 10+ */
+  background: -o-linear-gradient(#537373, #283838);
+  /* Opera 11.10 */
+  background: linear-gradient(#537373, #283838);
+  /* the standard */
+  border: 0px;
+  padding: 8px;
+  position: relative;
+  text-decoration: none;
+  box-shadow: 0;
+  position: relative;
+  margin-top: 2em;
+}
+
+button:hover {
+  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.34);
+  border-radius: 3px;
+  color: white;
+  background: #648181;
+  background: -moz-linear-gradient(#648181, #374848);
+  /* FF 3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #648181), color-stop(100%, #374848));
+  /* Safari 4+, Chrome 2+ */
+  background: -webkit-linear-gradient(#648181, #374848);
+  /* Safari 5.1+, Chrome 10+ */
+  background: -o-linear-gradient(#648181, #374848);
+  /* Opera 11.10 */
+  background: linear-gradient(#648181, #374848);
+  /* the standard */
+  border: 0px;
+  padding: 8px;
+  position: relative;
+  text-decoration: none;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.34);
+  border-radius: 3px;
+  color: white;
+  background: #425c5c;
+  background: -moz-linear-gradient(#425c5c, #172121);
+  /* FF 3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #425c5c), color-stop(100%, #172121));
+  /* Safari 4+, Chrome 2+ */
+  background: -webkit-linear-gradient(#425c5c, #172121);
+  /* Safari 5.1+, Chrome 10+ */
+  background: -o-linear-gradient(#425c5c, #172121);
+  /* Opera 11.10 */
+  background: linear-gradient(#425c5c, #172121);
+  /* the standard */
+  border: 0px;
+  padding: 8px;
+  position: relative;
+  text-decoration: none;
+  box-shadow: 0 1px 4px 1px rgba(255, 255, 255, 0.5);
+}
+
+#contact {
+  *zoom: 1;
+}
+#contact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #contact aside {
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.4), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 1px 2px 0px rgba(255, 255, 255, 0.4), 0px 2px 2px 1px rgba(0, 0, 0, 0.24);
   border-top: 0;
   float: right;
   font-weight: bold;
   margin-top: 7em;
-  padding: 1em;
+  padding: 2em;
   width: 35%;
 }
