@@ -649,7 +649,7 @@ footer {
 }
 
 .thumb hgroup {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   height: 100%;
   opacity: 0;
   pointer-events: none;

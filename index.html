@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Tim Croteau - UX Strategy | UI Design | All Around Nice Fella</title>
+		<title>Tim Croteau - UX Strategy | Design | All Around Nice Fella</title>
 		<meta name="description" content="The online portfolio of Tim Croteau, UX strategist & designer.">
 		<meta name="author" content="Tim Croteau">
 		<!--[if lt IE 9]>
@@ -11,6 +11,7 @@
 			<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
 		<![endif]-->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="images/favicon.ico" />
 		<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 		<!--[if IE]>
 			<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -94,8 +95,8 @@
 					<section class="thumb">
 						<a rel="leanModal" href="#zoom1"><img src="images/work/tedx_thumb.jpg"></a>
 						<hgroup>
-							<h1>TEDxBeaconStreet.com</h1>
-							<h2>UI Design</h2><a href="http://www.tedxbeaconstreet.com">View Site</a></hgroup>
+							<h1>TEDx Beacon Street</h1>
+							<h2>UI Design</h2><a href="http://www.tedxbeaconstreet.com" target="_blank">View Site</a></hgroup>
 					</section>
 					<figure id="zoom1"><img src="images/work/tedx_lg.jpg"></figure>
 					<section class="thumb">
@@ -115,12 +116,15 @@
 					<figure id="zoom3"><img src="images/work/tattoo_lg.png"></figure>
 
 					<section class="thumb">
-						<a rel="leanModal" href="#zoom4"><img src="#"></a>
-						
+						<a rel="leanModal" href="#zoom4"><img src="images/work/mobile_thumb.png"></a>
+						<hgroup>
+							<h1>Mobile Checkout</h1>
+							<h2>UI Design</h2>Mobile Checkout Concept for <a href="http://www.ctshirts.com" target="_blank">ctshirts.com</a></hgroup>
 					</section>
+					<figure id="zoom4"><img src="images/work/mobile_lg.png"></figure>
 				</section>
 
-				<section id="contact">
+				<!-- <section id="contact">
 					<aside>
 						<p>I am currently available for consulting and design work, as well as the occasional voice acting gig. I can also be found on:</p>
 						<ul>
@@ -136,9 +140,9 @@
 					<input type="email" id="email">
 					<label for="comments">Comment or Question</label>
 					<textarea id="comments"></textarea>
-				</section>
+				</section> -->
 			</div>
-			<footer>&copy; 2012 Tim Croteau. All rights reserved.</footer>
+			<footer>&copy; 2012 Tim Croteau. All rights reserved. <a href="mailto:tim@timcroteau.org" target="_blank">Email Me</a></footer>
 		</div>
 		<script src="js/excanvas.min.js"></script>
 		<script src="js/chartwell.min.js" type="text/javascript"></script>
@@ -152,7 +156,7 @@
 		<script src="js/jquery.leanModal.min.js"></script>
 		<script type="text/javascript">
 			$(function() {
-    			$('a[rel*=leanModal]').leanModal({ top : 0, });		
+    			$('a[rel*=leanModal]').leanModal({ top : 0,overlay : 0.7 });		
 			});
 		</script>
 	</body>

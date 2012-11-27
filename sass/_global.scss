@@ -125,7 +125,7 @@ footer {
 .thumb a {pointer-events:auto;}
 
 .thumb hgroup {
-	background:transparentize($white,.1);
+	background:transparentize($white,.05);
 	height:100%;
 	opacity:0;
 	pointer-events:none;
