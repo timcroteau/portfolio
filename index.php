@@ -11,12 +11,12 @@
 			<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
 		<![endif]-->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="shortcut icon" href="images/favicon.ico" />
-		<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="portfolio/images/favicon.ico" />
+		<link href="portfolio/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 		<!--[if IE]>
 			<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		<![endif]-->
-		<link rel="stylesheet" href="stylesheets/styles.css" type="text/css">
+		<link rel="stylesheet" href="portfolio/stylesheets/styles.css" type="text/css">
 		<script src="//use.typekit.net/cte4lth.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
@@ -93,35 +93,35 @@
 				<section id="work">
 					<h2>Featured Work</h2>
 					<section class="thumb">
-						<a rel="leanModal" href="#zoom1"><img src="images/work/tedx_thumb.jpg"></a>
+						<a rel="leanModal" href="#zoom1"><img src="portfolio/images/work/tedx_thumb.jpg"></a>
 						<hgroup>
 							<h1>TEDx Beacon Street</h1>
 							<h2>UI Design</h2><a href="http://www.tedxbeaconstreet.com" target="_blank">View Site</a></hgroup>
 					</section>
-					<figure id="zoom1"><img src="images/work/tedx_lg.jpg"></figure>
+					<figure id="zoom1"><img src="portfolio/images/work/tedx_lg.jpg"></figure>
 					<section class="thumb">
-						<a rel="leanModal" href="#zoom2"><img src="images/work/click_thumb.jpg"></a>
+						<a rel="leanModal" href="#zoom2"><img src="portfolio/images/work/click_thumb.jpg"></a>
 						<hgroup>
 							<h1>ClickSoftware.com</h1>
 							<h2>UX Planning</h2>Resource Locator Wireframe</hgroup>
 					</section>
-					<figure id="zoom2"><img src="images/work/click_lg.jpg"></figure>
+					<figure id="zoom2"><img src="portfolio/images/work/click_lg.jpg"></figure>
 					
 					<section class="thumb">
-						<a rel="leanModal" href="#zoom3"><img src="images/work/tattoo_thumb.png"></a>
+						<a rel="leanModal" href="#zoom3"><img src="portfolio/images/work/tattoo_thumb.png"></a>
 						<hgroup>
 							<h1>Music-Themed Tattoo</h1>
 							<h2>Graphic Design</h2>Options for back or side placement</hgroup>
 					</section>
-					<figure id="zoom3"><img src="images/work/tattoo_lg.png"></figure>
+					<figure id="zoom3"><img src="portfolio/images/work/tattoo_lg.png"></figure>
 
 					<section class="thumb">
-						<a rel="leanModal" href="#zoom4"><img src="images/work/mobile_thumb.png"></a>
+						<a rel="leanModal" href="#zoom4"><img src="portfolio/images/work/mobile_thumb.png"></a>
 						<hgroup>
 							<h1>Mobile Checkout</h1>
 							<h2>UI Design</h2>Mobile Checkout Concept for <a href="http://www.ctshirts.com" target="_blank">ctshirts.com</a></hgroup>
 					</section>
-					<figure id="zoom4"><img src="images/work/mobile_lg.png"></figure>
+					<figure id="zoom4"><img src="portfolio/images/work/mobile_lg.png"></figure>
 				</section>
 
 				<section id="contact">
@@ -183,20 +183,16 @@
         ?>
 				</section>
 			</div>
-			<footer>&copy; 2012 Tim Croteau. All rights reserved. <a href="mailto:tim@timcroteau.org" target="_blank">Email Me</a></footer>
+			<footer>&copy; 2012 Tim Croteau. All rights reserved.</footer>
 		</div>
-		<script src="js/excanvas.min.js"></script>
-		<script src="js/chartwell.min.js" type="text/javascript"></script>
-		<script src="js/chartwell_pies.min.js" type="text/javascript"></script>
-		<script>
-			window.onload = function(){
-				FFChartwell()
-			}
-		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="js/jquery.leanModal.min.js"></script>
+		<script src="portfolio/js/scripts.js"></script>
+		
 		<script type="text/javascript">
 			$(function() {
+				//create pie charts out of chartwell'd text
+				FFChartwell();
+				//create modal windows
     			$('a[rel*=leanModal]').leanModal({ top : 0,overlay : 0.7 });		
 			});
 		</script>

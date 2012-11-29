@@ -229,7 +229,7 @@ svg:not(:root) {
 /* then for WOFF-capable browsers */
 @font-face {
   font-family: Chartwell;
-  src: url("/fonts/ChartwellTextWebPro.woff") format("woff");
+  src: url("../fonts/ChartwellTextWebPro.woff") format("woff");
 }
 
 body {
